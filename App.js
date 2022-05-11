@@ -1,11 +1,14 @@
 import About from './components/About';
 import './App.css';
+import { BrowserRouter, Routes,Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div >
-      <About/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path='/About' element={<About/>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
